@@ -6,7 +6,12 @@
 /*   By: bkahrama <bkahrama@student.42kocaeli.com.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/28 18:56:51 by bkahrama          #+#    #+#             */
-/*   Updated: 2024/07/28 19:00:58 by bkahrama         ###   ########.tr       */
+/*   Updated: 2024/07/28 19:39:34 by bkahrama         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+int	ft_strlen(char *str)
+{
+	if (!*str)
+		return (0);
+	return (1 + ft_strlen(str + 1));
+}
